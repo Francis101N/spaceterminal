@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section class="location">
+    <section class="location p-5">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.6687542570717!2d-81.71577682522566!3d26.17491529140871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dae29f55b43f59%3A0x24535b41cd5a45a0!2s5278%20Golden%20Gate%20Pkwy%2C%20Naples%2C%20FL%2034116%2C%20USA!5e0!3m2!1sen!2sng!4v1690572551329!5m2!1sen!2sng"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"

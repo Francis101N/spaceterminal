@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houston | Space Terminal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <?php include 'inc/header.php'; ?>
+
+    <section class="relative bg-cover bg-center h-[500px]" style="background-image: url('assets/images/hero-bg.jpg');">
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+
+        <div class="relative max-w-7xl mx-auto h-full flex flex-col justify-center items-center text-center px-6">
+            <!-- Hero Content -->
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Terminals in Houston </h2>
+            <p class="text-white text-base md:text-lg max-w-2xl">
+                We “SPACE TERMINAL LLC” Tank farm storage have premier service provider to the liquid bulk chemical
+                industry for many years…
+            </p>
+
+            <!-- Highlight Line -->
+            <div class="w-24 h-1 bg-yellow-400 mt-6"></div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="terminal-slide flex flex-col lg:flex-row gap-12 items-center">
+
+                <!-- Image -->
+                <div class="w-full lg:w-1/2">
+                    <img src="assets/images/terminal1.jpg" alt="Terminal Rotterdam"
+                        class="w-full h-[420px] object-cover rounded-xl shadow-xl">
+                </div>
+
+                <!-- Content -->
+                <div class="w-full lg:w-1/2 space-y-5">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0d314d] uppercase">
+                        Terminals in Houston
+                    </h2>
+
+                    <p class="text-gray-700 leading-relaxed">
+                        At <b>Spce Terminal LLC</b> (Houston), we take immense pride in providing premier
+                        storage, transfer, and distribution services for the petroleum and petrochemical industry
+                        worldwide.
+
+                        Strategically located at the entrance of the Houston Ship Channel, a major hub for chemical
+                        production and export, we have been a trusted supplier to the liquid bulk chemical industry for
+                        over three decades.
+
+                        Our tank farm storage facilities feature state-of-the-art pressurized tanks, nitrogen
+                        compensation systems, and advanced vapor return systems, ensuring maximum safety, efficiency,
+                        and environmental sustainability.
+
+                    <p> With a total storage capacity of 379,629 cubic meters (2,387,795 barrels) across 119 tanks, we
+                        offer flexible solutions to accommodate volumes ranging from 340 to 9,550 cubic meters. Among
+                        these, 44 stainless steel tanks provide 112,835 cubic meters (709,984 barrels) of high-quality
+                        storage.</p><br>
+
+                    Our strategic location allows seamless access for sea-going tankers, barges, rail tank cars, and
+                    road tank trucks, supported by two deep-sea docks and four barge berths for efficient vessel
+                    handling.
+
+                    Comprehensive rail and road tank handling facilities ensure smooth distribution throughout the
+                    United States and international markets, streamlining logistics and expediting delivery.
+
+                    At <b>Space Terminal LLC</b> (Houston), we are committed to professionalism, safety, and
+                    exceptional service. Whether your needs involve storage, transfer, or distribution, our
+                    experienced team is ready to tailor solutions to your business requirements.
+                    </p>
+
+
+                    <a href="../Contact Us/index.html" class="inline-block mt-6 px-8 py-3 bg-[#0d314d] text-white rounded-lg font-semibold
+          hover:bg-[#13406b] transition duration-300">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="location p-5">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221742.28096837254!2d-95.62751371328123!3d29.727778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640be587f905555%3A0x1e8b9191b29dd66f!2sBulk%20Fueling%20Diesel%20Tank%20Farm!5e0!3m2!1sen!2sng!4v1690731551053!5m2!1sen!2sng"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="py-15 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="services-slide bg-gray-50 rounded-2xl shadow-xl p-10">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0d314d] mb-8">
+                    Insights
+                </h2>
+
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 w-2.5 h-2.5 bg-[#eab308] rounded-full flex-shrink-0"></span>
+                        <p class="text-gray-700 leading-relaxed">
+                            Linked to the North American rail network for distribution throughout the United States,
+                            Canada and Houston
+                        </p>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 w-2.5 h-2.5 bg-[#eab308] rounded-full flex-shrink-0"></span>
+                        <p class="text-gray-700 leading-relaxed">
+                            Multiple stainless steel rail header systems enabling the loading and unloading of up to 110
+                            rail cars on eight tracks
+                        </p>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 w-2.5 h-2.5 bg-[#eab308] rounded-full flex-shrink-0"></span>
+                        <p class="text-gray-700 leading-relaxed">
+                            Direct transfer from rail cars to ships or barges, at rates up to 500 cbm (3,500 bbls) per
+                            hour
+                        </p>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 w-2.5 h-2.5 bg-[#eab308] rounded-full flex-shrink-0"></span>
+                        <p class="text-gray-700 leading-relaxed">
+                            14 truck stations with multiple load-on-scale racks located throughout the terminal
+                        </p>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 w-2.5 h-2.5 bg-[#eab308] rounded-full flex-shrink-0"></span>
+                        <p class="text-gray-700 leading-relaxed">
+                            Automated scale system controls truck loading process
+                            through computerized control features
+                        </p>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 w-2.5 h-2.5 bg-[#eab308] rounded-full flex-shrink-0"></span>
+                        <p class="text-gray-700 leading-relaxed">
+                            Trans-loading services through stainless steel transfer system
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="terminals-section py-10 bg-gray-50">
+        <div class="container mx-auto px-20">
+            <h1 class="text-4xl font-bold text-[#0d314d] mb-4">
+                Tank Terminals
+            </h1>
+
+            <p class="text-gray-700 mb-6">
+                Location is everything in our business. Around the world, we connect the supply
+                of and demand for vital products and resources. Our global network of terminals
+                determines our service towards our customers.
+            </p>
+            <hr>
+            <br>
+            <p class="text-gray-700 mb-2">
+                Below you will find an overview of Southern Logistic's global network of tank terminals.
+            </p>
+
+            <p class="text-yellow-700 font-semibold mb-2">
+                Be aware of cybercrime and storage spoofing.
+            </p>
+            <br>
+
+            <p><b>In the overview below, you can see which products can be stored at our terminals.</b></p>
+            <p class="text-gray-700 mb-8">
+                P = Petroleum, C = Chemicals, G = Gases, V = Vegetable Oils
+            </p>
+
+            <img src="assets/images/map.png" alt="Map" class="w-full rounded-lg shadow mb-10">
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full border border-gray-200 bg-white shadow-lg rounded-lg">
+                    <thead class="bg-[#0d314d] text-white">
+                        <tr>
+                            <th class="px-4 py-2 text-left text-sm font-medium">Location</th>
+                            <th class="px-4 py-2 text-left text-sm font-medium">Share</th>
+                            <th class="px-4 py-2 text-left text-sm font-medium">Capacity (cbm)</th>
+                            <th class="px-4 py-2 text-left text-sm font-medium">Petroleum</th>
+                            <th class="px-4 py-2 text-left text-sm font-medium">Chemicals</th>
+                            <th class="px-4 py-2 text-left text-sm font-medium">Gases</th>
+                            <th class="px-4 py-2 text-left text-sm font-medium">Vegoils</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <!-- Previous rows -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Brazil - Southern LLC Brazil - Alemoa Terminal
+                            </td>
+                            <td class="px-4 py-2 text-sm text-gray-700">100.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">276,820</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">P</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">V</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Brazil - Southern LLC Brazil - Aratu Terminal
+                            </td>
+                            <td class="px-4 py-2 text-sm text-gray-700">100.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">108,130</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">P</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">V</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Canada - Ridley Island Propane Export Terminal
+                                (RIPET)</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">30.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">96,000</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">G</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Colombia - SPEC LNG</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">49.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">170,000</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">G</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Colombia - Southern LLC Colombia - Barranquilla
+                                Terminal</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">100.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">46,521</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">P</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">V</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Colombia - Southern LLC Colombia - Cartagena
+                                Terminal</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">100.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">26,629</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">P</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">V</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Texas - LNG Terminal Houston</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">60.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">300,000</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">G</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Texas - Southern LLC Houston - Houston Terminal
+                            </td>
+                            <td class="px-4 py-2 text-sm text-gray-700">100.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">150,150</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">G</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">V</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Texas - Southern LLC Houston - Dallas Terminal
+                            </td>
+                            <td class="px-4 py-2 text-sm text-gray-700">100.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">25,900</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">G</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">V</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Houston - Southern LLC Houston - Veracruz
+                                Terminal</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">100.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">213,100</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">V</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Panama - Terminal Bahia Las Minas</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">0.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">519,543</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">P</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">Panama - Southern LLC Panama</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">100.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">375,341</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">P</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">USA - Southern LLC Freeport - Texas</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">50.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">101,009</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-2 text-sm text-gray-800">USA - Southern LLC Moda Houston</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">50.00%</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">46,260</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">C</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                            <td class="px-4 py-2 text-sm text-gray-700">-</td>
+                        </tr>
+                        <!-- Add the rest of your remaining rows in the same format -->
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Fixed CTA Button -->
+    <a href="../Contact Us/index.html"
+        class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-5 py-3 rounded-full shadow-lg transition-all duration-300 flex items-center space-x-2">
+        <span>For Port Access And Entrance Certificate</span>
+        <i class="fas fa-arrow-right"></i>
+    </a>
+
+
+    <?php include 'inc/footer.php'; ?>
+
+</body>
+
+</html>
