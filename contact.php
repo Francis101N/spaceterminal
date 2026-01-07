@@ -96,10 +96,12 @@
             <div class="bg-white shadow-lg rounded-lg p-8 max-w-3xl mx-auto" data-aos="fade-up"
                 data-aos-duration="1000">
                 <h3 class="text-2xl font-bold text-[#0d314d] mb-6 text-center">Send Us a Message</h3>
-                <form action="email.php" method="post" class="space-y-4">
+                <form action="proc_contact" method="post" class="space-y-4">
                     <input type="text" name="name" placeholder="Enter your Name" required
                         class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-[#0d314d] focus:outline-none">
                     <input type="email" name="email" placeholder="Enter Email Address" required
+                        class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-[#0d314d] focus:outline-none">
+                    <input type="text" name="phone" placeholder="Enter Phone Number" required
                         class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-[#0d314d] focus:outline-none">
                     <input type="text" name="subject" placeholder="Enter your Subject" required
                         class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-[#0d314d] focus:outline-none">

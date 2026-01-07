@@ -206,226 +206,140 @@
             <img src="assets/images/map.png" alt="Map" class="w-full rounded-lg shadow mb-10">
 
             <!-- TABLE -->
-            <div class="overflow-x-auto bg-white shadow rounded-lg">
-                <table class="min-w-[1100px] w-full text-sm border-collapse">
+           <div class="overflow-x-auto bg-white shadow-lg rounded-xl">
+  <table class="min-w-[1100px] w-full text-sm border-collapse">
 
-                    <thead class="bg-[#0d314d] text-white">
-                        <tr>
-                            <th class="px-4 py-3 text-left">Location</th>
-                            <th class="px-4 py-3">Share</th>
-                            <th class="px-4 py-3">Capacity</th>
-                            <th class="px-4 py-3">P</th>
-                            <th class="px-4 py-3">C</th>
-                            <th class="px-4 py-3">G</th>
-                            <th class="px-4 py-3">V</th>
-                        </tr>
-                    </thead>
+    <!-- Table Head -->
+    <thead class="bg-[#0d314d] text-white">
+      <tr>
+        <th class="px-4 py-3 text-left font-semibold">Location</th>
+        <th class="px-4 py-3 font-semibold">Share</th>
+        <th class="px-4 py-3 font-semibold">Capacity (cbm)</th>
+        <th class="px-4 py-3 font-semibold">Petroleum</th>
+        <th class="px-4 py-3 font-semibold">Chemicals</th>
+        <th class="px-4 py-3 font-semibold">Gases</th>
+        <th class="px-4 py-3 font-semibold">Vegoils</th>
+      </tr>
+    </thead>
 
-                    <tbody class="text-gray-700">
+    <!-- Table Body -->
+    <tbody class="text-gray-700 divide-y">
 
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Brazil - Southern LLC Brazil - Alemoa Terminal</td>
+        <td class="px-4 py-2">100.00%</td>
+        <td class="px-4 py-2">276,820</td>
+        <td>P</td><td>C</td><td>-</td><td>V</td>
+      </tr>
 
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Brazil - Southern LLC Brazil - Alemoa Terminal</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">276,820</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Brazil - Southern LLC Brazil - Aratu Terminal</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">108,130</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Canada - Ridley Island Propane Export Terminal (RIPET)</td>
-                            <td class="px-4 py-2">30.00%</td>
-                            <td class="px-4 py-2">96,000</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">G</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Colombia - SPEC LNG</td>
-                            <td class="px-4 py-2">49.00%</td>
-                            <td class="px-4 py-2">170,000</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">G</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Colombia - Southern LLC Colombia - Barranquilla Terminal</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">46,521</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Colombia - Southern LLC Colombia - Cartagena Terminal</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">26,629</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Rotterdam - LNG Terminal Fujirah</td>
-                            <td class="px-4 py-2">60.00%</td>
-                            <td class="px-4 py-2">300,000</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">G</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Rotterdam - Southern LLC Rotterdam - Fujirah Terminal</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">150,150</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">G</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Rotterdam - Southern LLC Rotterdam - Coatzacoalcos Terminal</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">25,900</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">G</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Rotterdam - Southern LLC Rotterdam - Veracruz Terminal</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">213,100</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Panama - Terminal Bahia Las Minas</td>
-                            <td class="px-4 py-2">0.00%</td>
-                            <td class="px-4 py-2">519,543</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Panama - Southern LLC Panama</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">375,341</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2"> -</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC Freeport - Texas</td>
-                            <td class="px-4 py-2">50.00%</td>
-                            <td class="px-4 py-2">101,009</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC Moda Houston</td>
-                            <td class="px-4 py-2">50.00%</td>
-                            <td class="px-4 py-2">46,260</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC Plaquemine - Louisiana</td>
-                            <td class="px-4 py-2">50.00%</td>
-                            <td class="px-4 py-2">300,120</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC St. Charles - Louisiana</td>
-                            <td class="px-4 py-2">50.00%</td>
-                            <td class="px-4 py-2">336,063</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC Terminal Corpus Christi</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">143,840</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC Terminal Deer Park (Houston)</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">1,282,512</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC Terminal Long Beach</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">54,988</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC Terminal Los Angeles</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">379,789</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">USA - Southern LLC Terminal Savannah</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">250,566</td>
-                            <td class="px-4 py-2">P</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2">Venezuela - Southern LLC Venezuela - Puerto Cabello Terminal</td>
-                            <td class="px-4 py-2">100.00%</td>
-                            <td class="px-4 py-2">124,960</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">C</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">V</td>
-                        </tr>
-                    </tbody>
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Brazil - Southern LLC Brazil - Aratu Terminal</td>
+        <td>100.00%</td><td>108,130</td><td>P</td><td>C</td><td>-</td><td>V</td>
+      </tr>
 
-                </table>
-            </div>
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Canada - Ridley Island Propane Export Terminal (RIPET)</td>
+        <td>30.00%</td><td>96,000</td><td>-</td><td>-</td><td>G</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Colombia - SPEC LNG</td>
+        <td>49.00%</td><td>170,000</td><td>-</td><td>-</td><td>G</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Colombia - Southern LLC Colombia - Barranquilla Terminal</td>
+        <td>100.00%</td><td>46,521</td><td>P</td><td>C</td><td>-</td><td>V</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Colombia - Southern LLC Colombia - Cartagena Terminal</td>
+        <td>100.00%</td><td>26,629</td><td>P</td><td>C</td><td>-</td><td>V</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">UAE - LNG Terminal Fujariah</td>
+        <td>60.00%</td><td>300,000</td><td>-</td><td>-</td><td>G</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">UAE - Southern LLC Fujariah - Fujariah Terminal</td>
+        <td>100.00%</td><td>150,150</td><td>-</td><td>C</td><td>G</td><td>V</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">UAE - Southern LLC Fujariah - Dallas Terminal</td>
+        <td>100.00%</td><td>25,900</td><td>-</td><td>C</td><td>G</td><td>V</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Fujariah - Southern LLC Fujariah - Veracruz Terminal</td>
+        <td>100.00%</td><td>213,100</td><td>-</td><td>C</td><td>-</td><td>V</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Panama - Terminal Bahia Las Minas</td>
+        <td>0.00%</td><td>519,543</td><td>P</td><td>-</td><td>-</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Panama - Southern LLC Panama</td>
+        <td>100.00%</td><td>375,341</td><td>P</td><td>-</td><td>-</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC Freeport - UAE</td>
+        <td>50.00%</td><td>101,009</td><td>-</td><td>C</td><td>-</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC Moda Fujariah</td>
+        <td>50.00%</td><td>46,260</td><td>-</td><td>C</td><td>-</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC Plaquemine - Louisiana</td>
+        <td>50.00%</td><td>300,120</td><td>P</td><td>C</td><td>-</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC St. Charles - Louisiana</td>
+        <td>50.00%</td><td>336,063</td><td>-</td><td>C</td><td>-</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC Terminal Corpus Christi</td>
+        <td>100.00%</td><td>143,840</td><td>P</td><td>C</td><td>-</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC Terminal Deer Park (Fujariah)</td>
+        <td>100.00%</td><td>1,282,512</td><td>P</td><td>C</td><td>-</td><td>-</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC Terminal Long Beach</td>
+        <td>100.00%</td><td>54,988</td><td>P</td><td>C</td><td>-</td><td>V</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC Terminal Los Angeles</td>
+        <td>100.00%</td><td>379,789</td><td>P</td><td>C</td><td>-</td><td>V</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">USA - Southern LLC Terminal Savannah</td>
+        <td>100.00%</td><td>250,566</td><td>P</td><td>C</td><td>-</td><td>V</td>
+      </tr>
+
+      <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2">Venezuela - Southern LLC Venezuela - Puerto Cabello Terminal</td>
+        <td>100.00%</td><td>124,960</td><td>-</td><td>C</td><td>-</td><td>V</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
 
         </div>
     </section>

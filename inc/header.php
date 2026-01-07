@@ -38,11 +38,11 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8 font-bold text-gray-700">
-          <a href="index.php" class="hover:text-primary">Home</a>
-          <a href="about.php" class="hover:text-primary">About Us</a>
-          <a href="services.php" class="hover:text-primary">Our Services</a>
-          <a href="terminals.php" class="hover:text-primary">Terminals</a>
-          <a href="contact.php" class="hover:text-primary">Contact Us</a>
+          <a href="index" class="hover:text-primary">Home</a>
+          <a href="about" class="hover:text-primary">About Us</a>
+          <a href="services" class="hover:text-primary">Our Services</a>
+          <a href="terminals" class="hover:text-primary">Terminals</a>
+          <a href="contact" class="hover:text-primary">Contact Us</a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -60,11 +60,11 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
       <div class="flex flex-col items-center py-4 space-y-4 font-medium text-gray-700">
-        <a href="index.php" class="hover:text-primary">Home</a>
-        <a href="about.php" class="hover:text-primary">About Us</a>
-        <a href="services.php" class="hover:text-primary">Our Services</a>
-        <a href="terminals.php" class="hover:text-primary">Terminals</a>
-        <a href="contact.php" class="hover:text-primary">Contact Us</a>
+        <a href="index" class="hover:text-primary">Home</a>
+        <a href="about" class="hover:text-primary">About Us</a>
+        <a href="services" class="hover:text-primary">Our Services</a>
+        <a href="terminals" class="hover:text-primary">Terminals</a>
+        <a href="contact" class="hover:text-primary">Contact Us</a>
       </div>
     </div>
   </nav>
