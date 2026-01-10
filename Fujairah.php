@@ -11,7 +11,12 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
+<style>
+ h1,h2,h3,h4,h5,h6, p{
+    font-family: Inter;
+    font-style: Inter;
+  }
+</style>
 <body>
     <?php include 'inc/header.php'; ?>
 
@@ -413,4 +418,28 @@
 
 </body>
 
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  tailwind.config = {
+    theme: {
+      extend: {
+        keyframes: {
+          float: {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-6px)' },
+          },
+        },
+        animation: {
+          float: 'float 1s ease-in-out infinite',
+        },
+      },
+    },
+  }
+</script>
 </html>

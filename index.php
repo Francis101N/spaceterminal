@@ -3,94 +3,103 @@
 
 // Database connection
 $host = 'localhost';
-$db   = 'spaceterminal';
+$db = 'spaceterminal';
 $user = 'spaceterminal';
 $pass = 'SPACEterminal1972$$$';
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    die("DB Connection failed: " . $e->getMessage());
+  die("DB Connection failed: " . $e->getMessage());
 }
 
 // Generate AES token
-function generateAESToken($data) {
-    $secret_key = "my_secret_key_123456"; 
-    $secret_iv  = "my_secret_iv_123456";
+function generateAESToken($data)
+{
+  $secret_key = "my_secret_key_123456";
+  $secret_iv = "my_secret_iv_123456";
 
-    $key = hash('sha256', $secret_key);
-    $iv  = substr(hash('sha256', $secret_iv), 0, 16);
+  $key = hash('sha256', $secret_key);
+  $iv = substr(hash('sha256', $secret_iv), 0, 16);
 
-    return base64_encode(openssl_encrypt($data, "AES-256-CBC", $key, 0, $iv));
+  return base64_encode(openssl_encrypt($data, "AES-256-CBC", $key, 0, $iv));
 }
 
 // Get IP address
-function getUserIP() {
-    if (!empty($_SERVER['HTTP_CLIENT_IP'])) return $_SERVER['HTTP_CLIENT_IP'];
-    if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) return explode(',', $_SERVER['HTTP_X_FORWARDED_FOR'])[0];
-    return $_SERVER['REMOTE_ADDR'];
+function getUserIP()
+{
+  if (!empty($_SERVER['HTTP_CLIENT_IP']))
+    return $_SERVER['HTTP_CLIENT_IP'];
+  if (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+    return explode(',', $_SERVER['HTTP_X_FORWARDED_FOR'])[0];
+  return $_SERVER['REMOTE_ADDR'];
 }
 
 // Get Operating System
-function getUserOS() {
-    $userAgent = $_SERVER['HTTP_USER_AGENT'];
-    $osArray = [
-        '/windows nt 10/i'     => 'Windows 10',
-        '/windows nt 6.3/i'    => 'Windows 8.1',
-        '/windows nt 6.2/i'    => 'Windows 8',
-        '/windows nt 6.1/i'    => 'Windows 7',
-        '/macintosh|mac os x/i'=> 'Mac OS X',
-        '/linux/i'             => 'Linux',
-        '/iphone/i'            => 'iPhone',
-        '/android/i'           => 'Android',
-        '/ipad/i'              => 'iPad'
-    ];
-    foreach ($osArray as $regex => $value) {
-        if (preg_match($regex, $userAgent)) return $value;
-    }
-    return "Unknown OS";
+function getUserOS()
+{
+  $userAgent = $_SERVER['HTTP_USER_AGENT'];
+  $osArray = [
+    '/windows nt 10/i' => 'Windows 10',
+    '/windows nt 6.3/i' => 'Windows 8.1',
+    '/windows nt 6.2/i' => 'Windows 8',
+    '/windows nt 6.1/i' => 'Windows 7',
+    '/macintosh|mac os x/i' => 'Mac OS X',
+    '/linux/i' => 'Linux',
+    '/iphone/i' => 'iPhone',
+    '/android/i' => 'Android',
+    '/ipad/i' => 'iPad'
+  ];
+  foreach ($osArray as $regex => $value) {
+    if (preg_match($regex, $userAgent))
+      return $value;
+  }
+  return "Unknown OS";
 }
 
 // Get Browser
-function getUserBrowser() {
-    $userAgent = $_SERVER['HTTP_USER_AGENT'];
-    $browsers = [
-        '/msie/i'       => 'Internet Explorer',
-        '/firefox/i'    => 'Firefox',
-        '/chrome/i'     => 'Chrome',
-        '/safari/i'     => 'Safari',
-        '/edge/i'       => 'Edge',
-        '/opera/i'      => 'Opera',
-        '/mobile/i'     => 'Mobile Browser'
-    ];
-    foreach ($browsers as $regex => $value) {
-        if (preg_match($regex, $userAgent)) return $value;
-    }
-    return "Unknown Browser";
+function getUserBrowser()
+{
+  $userAgent = $_SERVER['HTTP_USER_AGENT'];
+  $browsers = [
+    '/msie/i' => 'Internet Explorer',
+    '/firefox/i' => 'Firefox',
+    '/chrome/i' => 'Chrome',
+    '/safari/i' => 'Safari',
+    '/edge/i' => 'Edge',
+    '/opera/i' => 'Opera',
+    '/mobile/i' => 'Mobile Browser'
+  ];
+  foreach ($browsers as $regex => $value) {
+    if (preg_match($regex, $userAgent))
+      return $value;
+  }
+  return "Unknown Browser";
 }
 
 // Get Location using ip-api
-function getLocationData($ip) {
-    $url = "http://ip-api.com/json/{$ip}?fields=status,country,regionName,city,query";
-    $response = @file_get_contents($url);
-    if ($response) {
-        $data = json_decode($response, true);
-        if ($data['status'] === 'success') {
-            return [
-                'ip'      => $data['query'],
-                'country' => $data['country'],
-                'region'  => $data['regionName'],
-                'city'    => $data['city']
-            ];
-        }
+function getLocationData($ip)
+{
+  $url = "http://ip-api.com/json/{$ip}?fields=status,country,regionName,city,query";
+  $response = @file_get_contents($url);
+  if ($response) {
+    $data = json_decode($response, true);
+    if ($data['status'] === 'success') {
+      return [
+        'ip' => $data['query'],
+        'country' => $data['country'],
+        'region' => $data['regionName'],
+        'city' => $data['city']
+      ];
     }
-    return [
-        'ip'      => $ip,
-        'country' => 'Unknown',
-        'region'  => 'Unknown',
-        'city'    => 'Unknown'
-    ];
+  }
+  return [
+    'ip' => $ip,
+    'country' => 'Unknown',
+    'region' => 'Unknown',
+    'city' => 'Unknown'
+  ];
 }
 
 // Gather all info
@@ -99,8 +108,8 @@ $os = getUserOS();
 $browser = getUserBrowser();
 $location = getLocationData($ip);
 $country = $location['country'];
-$region  = $location['region'];
-$city    = $location['city'];
+$region = $location['region'];
+$city = $location['city'];
 
 // Check if IP exists
 $stmt = $pdo->prepare("SELECT COUNT(*) FROM visitors WHERE ip_address = ?");
@@ -108,32 +117,32 @@ $stmt->execute([$ip]);
 $count = $stmt->fetchColumn();
 
 if ($count == 0) {
-    // Generate unique AES token for this visitor
-    $token = generateAESToken($ip . time());
+  // Generate unique AES token for this visitor
+  $token = generateAESToken($ip . time());
 
-    // Insert new visitor
-    $insert = $pdo->prepare("INSERT INTO visitors (ip_address, operating_system, country, `state/region`, city, browser, token) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $insert->execute([$ip, $os, $country, $region, $city, $browser, $token]);
+  // Insert new visitor
+  $insert = $pdo->prepare("INSERT INTO visitors (ip_address, operating_system, country, `state/region`, city, browser, token) VALUES (?, ?, ?, ?, ?, ?, ?)");
+  $insert->execute([$ip, $os, $country, $region, $city, $browser, $token]);
 
-    // Send email notification
-    require_once('./PHPMailer/PHPMailerAutoload.php');
-    $mail = new PHPMailer(true);
+  // Send email notification
+  require_once('./PHPMailer/PHPMailerAutoload.php');
+  $mail = new PHPMailer(true);
 
-    try {
-        $mail->isSMTP();
-        $mail->Host       = 'mail.techbyfrancis.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'portfolio@techbyfrancis.com';
-        $mail->Password   = 'TECHbyfrancis101$$';
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port       = 465;
+  try {
+    $mail->isSMTP();
+    $mail->Host = 'mail.techbyfrancis.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'portfolio@techbyfrancis.com';
+    $mail->Password = 'TECHbyfrancis101$$';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
 
-        $mail->setFrom('portfolio@techbyfrancis.com', 'Space Terminal Notification');
-        $mail->addAddress('francisnwankwo1972@gmail.com');
+    $mail->setFrom('portfolio@techbyfrancis.com', 'Space Terminal Notification');
+    $mail->addAddress('francisnwankwo1972@gmail.com');
 
-        $mail->isHTML(true);
-        $mail->Subject = 'New Unique Visitor Alert';
-        $mail->Body    = "
+    $mail->isHTML(true);
+    $mail->Subject = 'New Unique Visitor Alert';
+    $mail->Body = "
             <h3>New Unique Visitor</h3>
             <p><strong>IP Address:</strong> $ip</p>
             <p><strong>Operating System:</strong> $os</p>
@@ -144,10 +153,10 @@ if ($count == 0) {
             <p><small>Time: " . date('Y-m-d H:i:s') . "</small></p>
         ";
 
-        $mail->send();
-    } catch (Exception $e) {
-        // Handle email error silently
-    }
+    $mail->send();
+  } catch (Exception $e) {
+    // Handle email error silently
+  }
 }
 ?>
 <!DOCTYPE html>
@@ -165,6 +174,17 @@ if ($count == 0) {
 
 </head>
 <style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-family: Inter;
+    font-style: Inter;
+  }
+
   .tank-storage-section {
     padding: 80px 0;
     background: #f5f5f5;
@@ -209,6 +229,7 @@ if ($count == 0) {
     margin-bottom: 15px;
     font-weight: bolder;
     color: #0d314d;
+
   }
 
   .floating-block {
@@ -236,8 +257,10 @@ if ($count == 0) {
     class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-500">
 
     <!-- Popup Content -->
-    <div
-      class="bg-white shadow-2xl p-8 max-w-sm w-full text-center transform -translate-y-10 opacity-0 transition-all duration-500 ">
+    <div class="bg-white shadow-1xl p-8 max-w-sm w-full text-center 
+         rounded-2xl 
+         transform -translate-y-10 opacity-0 transition-all duration-500">
+
 
       <!-- Logo -->
       <img src="assets/images/logo-removebg-preview.png" alt="Trust Vault Global Logo" class="mx-auto h-26 w-44 mb-3">
@@ -292,7 +315,7 @@ if ($count == 0) {
   </style>
 
 
-  <main class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+  <main class="relative h-[85vh] flex items-center justify-center text-center overflow-hidden">
 
     <!-- Background Video -->
     <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
@@ -322,20 +345,25 @@ if ($count == 0) {
 
   </main>
 
-  <section class="flex justify-center items-center space-x-6 py-8 bg-gray-100">
-    <a href="#"
-      class="bg-[#0a273d] text-white font-semibold px-6 py-3 rounded hover:animate-float transition duration-300">
+  <section class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 py-8 bg-gray-100">
+
+    <a href="#" class="bg-[#0a273d] text-white font-semibold px-6 py-3 rounded text-center
+            hover:animate-float transition duration-300 w-full sm:w-auto">
       Tank Storage
     </a>
-    <a href="#"
-      class="bg-[#0a273d] text-white font-semibold px-6 py-3 rounded hover:animate-float transition duration-300">
+
+    <a href="#" class="bg-[#0a273d] text-white font-semibold px-6 py-3 rounded text-center
+            hover:animate-float transition duration-300 w-full sm:w-auto">
       Innovation
     </a>
-    <a href="#"
-      class="bg-[#0a273d] text-white font-semibold px-6 py-3 rounded hover:animate-float transition duration-300">
+
+    <a href="#" class="bg-[#0a273d] text-white font-semibold px-6 py-3 rounded text-center
+            hover:animate-float transition duration-300 w-full sm:w-auto">
       Sustainability
     </a>
+
   </section>
+
 
   <section class="bg-gray-50 py-16">
     <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">

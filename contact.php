@@ -12,6 +12,17 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-family: Inter;
+        font-style: Inter;
+    }
+
     .space {
         display: flex;
         justify-content: space-around;
@@ -86,10 +97,21 @@
                     data-aos="fade-right" data-aos-duration="1600">
                     <i class="fa fa-envelope text-2xl text-[#0d314d] flex-shrink-0"></i>
                     <div>
-                        <h5 class="font-semibold text-gray-900">info@southernlogisticsllc.com</h5>
+                        <h5 class="font-semibold text-gray-900">spaceterminalofficial@gmail.com</h5>
                         <p class="text-gray-600">Email us your query</p>
                     </div>
                 </div>
+
+                <!-- Phone -->
+                <div class="flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-2 bg-white p-4 rounded-lg shadow-md"
+                    data-aos="fade-right" data-aos-duration="1800">
+                    <i class="fa fa-phone text-2xl text-[#0d314d] flex-shrink-0"></i>
+                    <div>
+                        <h5 class="font-semibold text-gray-900">+1 (325) 315-5954</h5>
+                        <p class="text-gray-600">Call us for inquiries</p>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Contact Form -->
@@ -167,6 +189,31 @@
         easing: 'ease-out-cubic',
         duration: 1000
     });
+</script>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    tailwind.config = {
+        theme: {
+            extend: {
+                keyframes: {
+                    float: {
+                        '0%, 100%': { transform: 'translateY(0)' },
+                        '50%': { transform: 'translateY(-6px)' },
+                    },
+                },
+                animation: {
+                    float: 'float 1s ease-in-out infinite',
+                },
+            },
+        },
+    }
 </script>
 
 </html>
