@@ -44,13 +44,22 @@
         <li><a href="#" target="_blank" class="hover:text-white"><i class="fab fa-instagram"></i></a></li>
         <li><a href="#" target="_blank" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a></li>
       </ul>
-      <div class="flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-2 bg-white p-4 rounded-lg shadow-md">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-2 
+            bg-white p-4 rounded-lg shadow-md w-full">
+
         <i class="fa fa-envelope text-2xl text-[#0d314d] flex-shrink-0"></i>
-        <div>
-          <h5 class="font-semibold text-gray-900">info@southernlogisticsllc.com</h5>
-          <p class="text-gray-600">Email us your query</p>
+
+        <div class="min-w-0">
+          <h5 class="font-semibold text-gray-900 text-sm sm:text-base break-all sm:break-words">
+            spaceterminalofficial@gmail.com
+          </h5>
+          <p class="text-gray-600 text-sm">
+            Email us your query
+          </p>
         </div>
-      </div><br>
+
+      </div>
+      <br>
       <div class="flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-2 bg-white p-4 rounded-lg shadow-md">
         <i class="fa-brands fa-whatsapp text-2xl text-green-600 flex-shrink-0"></i>
         <div>
