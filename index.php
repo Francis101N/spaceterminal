@@ -345,7 +345,8 @@ if ($count == 0) {
 
   </main>
 
-  <section class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 py-8 bg-gray-100">
+  <section class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 
+                py-8 px-4 sm:px-0 bg-gray-100">
 
     <a href="#" class="bg-[#0a273d] text-white font-semibold px-6 py-3 rounded text-center
             hover:animate-float transition duration-300 w-full sm:w-auto">
